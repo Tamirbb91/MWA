@@ -21,8 +21,8 @@ var find = fileName => fileTree => {
         return true;
     }
 
-    for(let subFolder in fileTree.subFolders){
-        if(find(fileName)(fileTree.subFolders[subFolder])){
+    for(let subFolder of fileTree.subFolders){
+        if(find(fileName)(subFolder)){
             return true;
         }
     }

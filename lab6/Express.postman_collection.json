@@ -1,0 +1,120 @@
+{
+	"id": "39d4cc91-48ee-4872-92f1-b1ab5b823ca4",
+	"name": "Express",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"6d9c7db7-bcce-45b1-b6f8-55e43cf9d979",
+		"fd992ce8-3b4f-4948-8a20-fa175be55f42",
+		"a0c794b6-383b-4e9d-abc1-df985cf3b7cb",
+		"4f7b478d-6bcf-4c8f-9847-4953007bb47c",
+		"053902c5-de52-4f55-9679-618cc8762cbf"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "053902c5-de52-4f55-9679-618cc8762cbf",
+			"name": "RetrieveById",
+			"url": "localhost:8080/grades/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "4f7b478d-6bcf-4c8f-9847-4953007bb47c",
+			"name": "Delete",
+			"url": "localhost:8080/grades/2",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "6d9c7db7-bcce-45b1-b6f8-55e43cf9d979",
+			"name": "RetrieveAll",
+			"url": "localhost:8080/grades",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a0c794b6-383b-4e9d-abc1-df985cf3b7cb",
+			"name": "Update",
+			"url": "localhost:8080/grades/2",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\":\"Tamiraa\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "fd992ce8-3b4f-4948-8a20-fa175be55f42",
+			"name": "Create",
+			"url": "localhost:8080/grades",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"name\": \"Tamir\",\n    \"course\": \"CS572\",\n    \"grade\": 100\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

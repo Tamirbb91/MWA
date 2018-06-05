@@ -1,0 +1,17 @@
+{
+	"isbn" : "123123",
+	"name" : "Algorithm Design and Applications",
+	"keywords" : ["internet", "computer", "algorithm"],
+	"author" :  {
+		"name" : "Michael T."
+	},
+	"borrowed" : {
+		"name" : "Tamir",
+		"returnDate" : "2018-06-10"
+	}
+}
+
+We can create indexes for 
+- author.name
+- borrowed.returnDate
+- keywords

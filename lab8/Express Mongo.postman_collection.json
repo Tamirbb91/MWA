@@ -1,0 +1,146 @@
+{
+	"id": "6a2844e9-449b-4934-be66-d4cf2bd8abca",
+	"name": "Express Mongo",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"9d7b1312-da3f-4181-b7e6-8d512bcd0f01",
+		"4fb047ea-4f5f-46ca-9f57-b63df51d86a5",
+		"abf7b04c-8c53-4a40-a294-684fe81b091b",
+		"e1a532b1-98e8-429c-b540-afe4ab8b765f",
+		"54716d77-2e3b-40f7-bd71-80e9ffc810fd",
+		"e91cc344-c7e6-46a0-be51-1f2420e88787"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "4fb047ea-4f5f-46ca-9f57-b63df51d86a5",
+			"name": "Create",
+			"url": "localhost:8080/location",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"name\": \"Ger\",\n    \"category\": \"home\",\n    \"location\": [47.9032432, 106.8879341]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "54716d77-2e3b-40f7-bd71-80e9ffc810fd",
+			"name": "RetrieveById",
+			"url": "localhost:8080/grades/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "9d7b1312-da3f-4181-b7e6-8d512bcd0f01",
+			"name": "RetrieveAll",
+			"url": "localhost:8080/grades",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "abf7b04c-8c53-4a40-a294-684fe81b091b",
+			"name": "Update",
+			"url": "localhost:8080/grades/2",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\":\"Tamiraa\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e1a532b1-98e8-429c-b540-afe4ab8b765f",
+			"name": "Delete",
+			"url": "localhost:8080/grades/2",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e91cc344-c7e6-46a0-be51-1f2420e88787",
+			"name": "NearestLocation",
+			"url": "localhost:8080/nearestLocation",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\":\"bank\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

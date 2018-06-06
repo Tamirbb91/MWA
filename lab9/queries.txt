@@ -1,0 +1,11 @@
+1. db.zipcodes.find({})
+2. db.zipcodes.aggregate([{$match : {pop: {$lt:1000}}}]);
+3. db.zipcodes.aggregate([	{$group : {_id : {'city': '$city', 'state':'$state'}, total_zip : {$sum : 1}}},
+{$match : {total_zip : {$gt : 1}}}, {$sort : {'_id.state':1, '_id.city':1}}])
+
+4. db.zipcodes.aggregate([
+	{$group : {_id : {'state':'$state', 'city':'$city'}, 'population':{$sum : '$pop'}}},
+	{$sort : {'_id.state' : 1, 'population':1}},
+	{$group : {_id : '$_id.state', city: {$first : '$_id.city'}, population:{$first:'$population'}}},
+	{$sort : {'population' : -1}}
+])
